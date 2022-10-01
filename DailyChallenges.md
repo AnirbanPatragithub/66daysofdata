@@ -66,7 +66,7 @@ def is_table(n,s=1,e=10):
     e=temp
   for i in range(s,e+1):
     print(f'{n}*{i}={n*i}')    
-is_table(5,10,20)    ```
+is_table(5,10,20)    
+```
 
 *Comment:Easy Program*
-
