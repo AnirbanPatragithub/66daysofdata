@@ -52,8 +52,7 @@ if __name__ == '__main__':
 
 *Issues Faced During Solving:
 Printing numbers like 5.000000
-Failed a test case where arr=[1,1,-1,-1] i.e missing 0 resulted in error.
-*
+Failed a test case where arr=[1,1,-1,-1] i.e missing 0 resulted in error.*
 *Comment:Easier Solutions available by using three variables instead of dictionary*
 
 **Problem Statement**: Write A Function to print the table of any number.The func should not throw error even if the start and end of table is messed.
@@ -70,3 +69,34 @@ is_table(5,10,20)
 ```
 
 *Comment:Easy Program*
+
+# Day 2
+## Python Code ##
+
+**Problem Statement** : Given five positive integers, find the minimum and maximum values that can be calculated by summing exactly four of the five integers. Then print the respective minimum and maximum values as a single line of two space-separated long integers.
+
+Input arr = [1,3,5,7,9]
+
+Output 16 24
+
+```python
+def miniMaxsum(arr):
+  arr.sort()
+  midsum=0
+  for i in arr[1:4]:
+    midsum = i + midsum
+  print(f'{midsum + arr[0]} {midsum+arr[-1]}')
+  # print(arr[-1])
+  # print(midsum)
+```
+
+**Problem Statement** : Ways To Remove i th character from a string
+
+```python
+def char_rem(text,pos):
+  temp = ''
+  for i in text:
+    if i != text[pos-1]:
+      temp = temp + i
+  return temp    
+```
